@@ -1,6 +1,6 @@
 String kLogo = "assets/images/splash_logo.png";
 String kBackground = "assets/images/background.png";
-String kPerson1 = "assets/images/onBoarding1.png";
+String kOnbording1 = "assets/images/onBoarding1.png";
 String kSelect = "assets/images/select.png";
 String kCoffee = "assets/images/coffee.png";
 String kPlane = "assets/images/plane.png";

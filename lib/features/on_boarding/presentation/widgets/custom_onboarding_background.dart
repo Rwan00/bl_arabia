@@ -36,7 +36,7 @@ class CustomOnboardingBackground extends StatelessWidget {
               ],
             ),
             Image.asset(
-              kPerson1,
+              kOnbording1,
             ),
           ],
         ),
