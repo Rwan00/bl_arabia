@@ -1,4 +1,5 @@
 import 'package:bl_arabia/core/colors.dart';
+import 'package:bl_arabia/features/exam/presentation/screens/welcome_exam_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/on_boarding_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/select_feild_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/splash_screen.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
       SelectFeildScreen.routeName:(_)=>const SelectFeildScreen(),
+      WelcomeExamScreen.routeName:(_)=>const WelcomeExamScreen(),
       },
       home: const SplashScreen(navigator: OnBoardingScreen(),),
       builder: (context, child) {

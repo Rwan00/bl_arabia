@@ -6,11 +6,13 @@ class AppBtn extends StatelessWidget {
   final void Function()? onPressed;
   final Color? clr;
   final String label;
+  final bool? enabled;
   const AppBtn({
     super.key,
     required this.onPressed,
     this.clr,
     required this.label,
+    this.enabled = true,
   });
 
   @override
@@ -19,7 +21,7 @@ class AppBtn extends StatelessWidget {
     return SizedBox(
       width: width * 0.8,
       child: ElevatedButton(
-        onPressed: onPressed,
+        onPressed: enabled! ? onPressed : null,
         style: ButtonStyle(
           padding: WidgetStateProperty.all(const EdgeInsets.all(2)),
           foregroundColor: WidgetStateProperty.all(Colors.white),
@@ -34,7 +36,7 @@ class AppBtn extends StatelessWidget {
             ),
           ),
           backgroundColor: WidgetStateProperty.all(
-            clr ?? kPrimaryColor,
+            clr ?? (enabled! ? kPrimaryColor : kPrimaryColor.withOpacity(0.5)),
           ),
         ),
         child: Text(

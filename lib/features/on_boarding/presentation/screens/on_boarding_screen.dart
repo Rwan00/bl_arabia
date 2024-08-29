@@ -38,7 +38,7 @@ class OnBoardingScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushNamed(context, SelectFeildScreen.routeName);
                     },
-                    label: "ابدأ الآن")
+                    label: "ابدأ الآن",)
               ],
             ),
           ),
