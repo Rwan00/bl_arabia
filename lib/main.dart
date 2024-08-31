@@ -7,7 +7,7 @@ import 'package:bl_arabia/features/on_boarding/presentation/screens/splash_scree
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'features/exam/presentation/screens/test.dart';
+
 
 void main() {
   runApp(const MyApp());
