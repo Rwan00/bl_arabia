@@ -1,10 +1,10 @@
 
 import 'package:bl_arabia/features/exam/presentation/widgets/answer_input_widget.dart';
 import 'package:bl_arabia/features/exam/presentation/widgets/progress_widget.dart';
+import 'package:bl_arabia/features/exam/presentation/widgets/check_answer_bottomsheet.dart';
 import 'package:bl_arabia/features/exam/presentation/widgets/show_video_widget.dart';
 import 'package:bl_arabia/features/exam/presentation/widgets/speed_controller.dart';
 import 'package:bl_arabia/shared/widgets/app_btn.dart';
-
 
 import 'package:flutter/material.dart';
 
@@ -14,17 +14,15 @@ class ExamScreen extends StatelessWidget {
   static String routeName = "Exam Screen";
   const ExamScreen({super.key});
 
-
   @override
   Widget build(BuildContext context) {
-   
     double height = MediaQuery.of(context).size.height;
 
-     VideoPlayerController videoController =VideoPlayerController.networkUrl(
-        Uri.parse(
-          "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
-        ),
-      );
+    VideoPlayerController videoController = VideoPlayerController.networkUrl(
+      Uri.parse(
+        "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4",
+      ),
+    );
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -49,20 +47,34 @@ class ExamScreen extends StatelessWidget {
               SizedBox(
                 height: height * 0.06,
               ),
-               ShowVideoWidget(controller: videoController,),
+              ShowVideoWidget(
+                controller: videoController,
+              ),
               SizedBox(
                 height: height * 0.05,
               ),
-               SpeedController(controller: videoController,),
+              SpeedController(
+                controller: videoController,
+              ),
               SizedBox(
                 height: height * 0.04,
               ),
-               AnswerInputWidget(controller: controller,),
+              AnswerInputWidget(
+                controller: controller,
+              ),
               SizedBox(
                 height: height * 0.15,
               ),
               AppBtn(
-                onPressed: () {},
+                onPressed: () {
+                  showModalBottomSheet(
+                   
+                    
+                      context: context,
+                      builder: (_) {
+                        return CheckAnswerBottomSheet(isRight: false,);
+                      });
+                },
                 label: "حسنا",
                 enabled: controller.text.isEmpty ? false : true,
               ),
@@ -74,4 +86,4 @@ class ExamScreen extends StatelessWidget {
   }
 }
 
-  TextEditingController controller = TextEditingController();
+TextEditingController controller = TextEditingController();
