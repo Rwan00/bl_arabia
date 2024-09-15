@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../core/colors.dart';
-import '../../core/fonts_stayles.dart';
+import '../../../../core/colors.dart';
+import '../../../../core/fonts_stayles.dart';
+import '../../data/streak_data.dart';
 
 class DaysStreak extends StatelessWidget {
   const DaysStreak({super.key});
@@ -44,12 +45,3 @@ class DaysStreak extends StatelessWidget {
   }
 }
 
-List<String> kWeekDays = [
-  "ث",
-  "ر",
-  "خ",
-  "ج",
-  "س",
-  "ح",
-  "ن",
-];

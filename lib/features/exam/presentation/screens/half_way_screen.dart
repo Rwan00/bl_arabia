@@ -1,6 +1,6 @@
 import 'package:bl_arabia/features/exam/data/imgs.dart';
 import 'package:bl_arabia/features/exam/presentation/widgets/progress_widget.dart';
-import 'package:bl_arabia/shared/screens/streak_screen.dart';
+import 'package:bl_arabia/features/streak/presentation/screens/streak_screen.dart';
 import 'package:bl_arabia/shared/widgets/app_btn.dart';
 import 'package:flutter/material.dart';
 

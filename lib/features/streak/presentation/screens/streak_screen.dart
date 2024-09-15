@@ -1,10 +1,11 @@
 import 'package:bl_arabia/core/fonts_stayles.dart';
-import 'package:bl_arabia/shared/widgets/days_streak.dart';
-import 'package:bl_arabia/shared/widgets/streak_man.dart';
+import 'package:bl_arabia/features/streak/presentation/screens/streak_done.dart';
+import 'package:bl_arabia/features/streak/presentation/widgets/days_streak.dart';
+import 'package:bl_arabia/features/streak/presentation/widgets/streak_man.dart';
 
 import 'package:flutter/material.dart';
 
-import '../widgets/app_btn.dart';
+import '../../../../shared/widgets/app_btn.dart';
 
 class StreakScreen extends StatefulWidget {
   static String routeName = "Streak Screen";
@@ -62,7 +63,9 @@ class _StreakScreenState extends State<StreakScreen> {
             ),
             const Spacer(),
             AppBtn(
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.of(context).pushNamed(StreakDone.routeName);
+              },
               label: "أكمل الأن",
             ),
             SizedBox(

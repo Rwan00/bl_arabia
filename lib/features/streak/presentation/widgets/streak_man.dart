@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../core/colors.dart';
-import '../../core/consts.dart';
-import '../../core/fonts_stayles.dart';
+import '../../../../core/colors.dart';
+import '../../../../core/consts.dart';
+import '../../../../core/fonts_stayles.dart';
 
 class StreakMan extends StatelessWidget {
   const StreakMan({super.key});
