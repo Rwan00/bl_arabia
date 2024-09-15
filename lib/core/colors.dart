@@ -6,3 +6,4 @@ Color kCafeColor = const Color(0xfff8f1f0);
 Color kRightBtnColor = const Color.fromRGBO(46, 211, 221, 1);
 Color kRightColor = const Color.fromRGBO(208, 252, 255, 1);
 Color kWrongColor = const Color.fromRGBO(255, 231, 231, 1);
+Color kDarkBlueColor = const Color.fromRGBO(93,111,129,1);

@@ -1,5 +1,6 @@
 import 'package:bl_arabia/features/exam/data/imgs.dart';
 import 'package:bl_arabia/features/exam/presentation/widgets/progress_widget.dart';
+import 'package:bl_arabia/shared/screens/streak_screen.dart';
 import 'package:bl_arabia/shared/widgets/app_btn.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,9 @@ class HalfWayScreen extends StatelessWidget {
           Image.asset(kPersonHalf),
           const Spacer(),
           AppBtn(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed(StreakScreen.routeName);
+            },
             label: "أكمل الأن",
           ),
           SizedBox(
