@@ -1,10 +1,11 @@
 import 'package:bl_arabia/core/colors.dart';
 import 'package:bl_arabia/core/fonts_stayles.dart';
-import 'package:bl_arabia/features/exam/presentation/screens/half_way_screen.dart';
+
 import 'package:bl_arabia/features/exam/presentation/widgets/progress_widget.dart';
 import 'package:bl_arabia/features/regestration/cubits/regester_cubit/register_cubit.dart';
 import 'package:bl_arabia/features/regestration/data/imgs.dart';
 import 'package:bl_arabia/features/regestration/data/sign_questions.dart';
+import 'package:bl_arabia/features/regestration/presentation/screens/register_done_screen.dart';
 import 'package:bl_arabia/features/regestration/presentation/widgets/register_input_field.dart';
 
 import 'package:flutter/material.dart';
@@ -71,7 +72,7 @@ class SignUpScreen extends StatelessWidget {
                         child: AppBtn(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, HalfWayScreen.routeName);
+                                context, RegisterDoneScreen.routeName);
                           },
                           label: "إنشاء حساب",
                           enabled: cubit.answerController.text.isEmpty

@@ -2,9 +2,11 @@ import 'package:bl_arabia/core/colors.dart';
 import 'package:bl_arabia/features/exam/presentation/screens/exam_screen.dart';
 import 'package:bl_arabia/features/exam/presentation/screens/half_way_screen.dart';
 import 'package:bl_arabia/features/exam/presentation/screens/welcome_exam_screen.dart';
+import 'package:bl_arabia/features/home/presentation/screens/home_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/on_boarding_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/select_feild_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/splash_screen.dart';
+import 'package:bl_arabia/features/regestration/presentation/screens/register_done_screen.dart';
 import 'package:bl_arabia/features/regestration/presentation/screens/sign_up_screen.dart';
 import 'package:bl_arabia/features/streak/presentation/screens/streak_done.dart';
 import 'package:bl_arabia/features/streak/presentation/screens/streak_screen.dart';
@@ -45,6 +47,8 @@ class MyApp extends StatelessWidget {
       StreakScreen.routeName:(_)=> const StreakScreen(),
       StreakDone.routeName:(_)=>const StreakDone(),
       SignUpScreen.routeName:(_)=>const SignUpScreen(),
+      RegisterDoneScreen.routeName:(_)=>const RegisterDoneScreen(),
+      HomeScreen.routeName:(_)=>const HomeScreen(),
       },
       home: const SplashScreen(navigator: OnBoardingScreen(),),
       
