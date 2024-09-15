@@ -5,6 +5,7 @@ import 'package:bl_arabia/features/exam/presentation/screens/welcome_exam_screen
 import 'package:bl_arabia/features/on_boarding/presentation/screens/on_boarding_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/select_feild_screen.dart';
 import 'package:bl_arabia/features/on_boarding/presentation/screens/splash_screen.dart';
+import 'package:bl_arabia/features/regestration/presentation/screens/sign_up_screen.dart';
 import 'package:bl_arabia/features/streak/presentation/screens/streak_done.dart';
 import 'package:bl_arabia/features/streak/presentation/screens/streak_screen.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
       HalfWayScreen.routeName:(_)=>const HalfWayScreen(),
       StreakScreen.routeName:(_)=> const StreakScreen(),
       StreakDone.routeName:(_)=>const StreakDone(),
+      SignUpScreen.routeName:(_)=>const SignUpScreen(),
       },
       home: const SplashScreen(navigator: OnBoardingScreen(),),
       

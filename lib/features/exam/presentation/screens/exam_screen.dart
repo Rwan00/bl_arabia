@@ -35,7 +35,7 @@ class ExamScreen extends StatelessWidget {
               SizedBox(
                 height: height * 0.06,
               ),
-              const ProgressWidget(),
+              const ProgressWidget(value: 0.1,),
               SizedBox(
                 height: height * 0.04,
               ),

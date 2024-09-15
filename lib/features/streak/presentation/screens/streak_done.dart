@@ -3,6 +3,7 @@ import 'package:bl_arabia/features/streak/data/imgs.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../shared/widgets/app_btn.dart';
+import '../../../regestration/presentation/screens/sign_up_screen.dart';
 
 class StreakDone extends StatelessWidget {
   static String routeName = "Streak Done";
@@ -40,9 +41,9 @@ class StreakDone extends StatelessWidget {
           Center(
             child: AppBtn(
               onPressed: () {
-                Navigator.of(context).pushNamed(StreakDone.routeName);
+                Navigator.of(context).pushNamed(SignUpScreen.routeName);
               },
-              label: "أكمل الأن",
+              label: "إنشاء حساب",
             ),
           ),
           TextButton(
