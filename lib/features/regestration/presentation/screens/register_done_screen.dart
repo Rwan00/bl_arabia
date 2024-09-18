@@ -1,4 +1,4 @@
-import 'package:bl_arabia/features/home/presentation/screens/home_screen.dart';
+import 'package:bl_arabia/features/home/presentation/screens/home_layout.dart';
 import 'package:bl_arabia/features/regestration/data/imgs.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +46,7 @@ class RegisterDoneScreen extends StatelessWidget {
           Center(
             child: AppBtn(
               onPressed: () {
-                Navigator.of(context).pushNamed(HomeScreen.routeName);
+                Navigator.of(context).pushNamed(HomeLayout.routeName);
               },
               label: "المتابعة",
             ),
